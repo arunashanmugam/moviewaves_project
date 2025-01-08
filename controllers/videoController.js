@@ -27,11 +27,11 @@ export const addVideo = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      message: "Video added successfully.",
+      message: "Video Added Successfully....",
       data: newVideo,
     });
   } catch (error) {
-    console.error("Error adding video:", error.message);
+    console.error("Error while adding video:", error.message);
     res.status(500).json({ success: false, message: "Internal server error." });
   }
 };
